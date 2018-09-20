@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.0.16',
     'localhost',
+    '127.0.0.1',
 ]
 
 
@@ -73,7 +74,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social.processors.ctx_dict',                
+                'social.processors.ctx_dict', 
+                'core.processors.image_dict',                    
             ],
         },
     },
